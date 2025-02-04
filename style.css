@@ -21,8 +21,32 @@ body {
     color: white;
 }
 
-.projects-section {
+.slider-container {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+.slider-container::-webkit-scrollbar {
+    width: 80px;
+    height: 5px;
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+    background-color: #B2EBF2;
+    border-radius: 10px;
+}
+
+.slider-container::-webkit-scrollbar-track {
+    background-color: #006064;
+}
+
+.projects-holder {
+    width: fit-content;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects {
@@ -31,6 +55,12 @@ body {
     background-color: #B2EBF2;
     border-radius: 24px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    margin: 0 20px;
     text-align: center;
 }
 
