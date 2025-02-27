@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    background-color: #006064; /* Dark Teal Background */
+    font-family: sans-serif; /* Add a basic font for better readability */
+    margin: 0; /* Remove default body margins */
+}
+
+/* About Section Styles */
+.about-name,
+.about-info,
+.about-social {
+    background-color: #B2EBF2; /* Light Blue Background */
+    border-radius: 24px;
+    padding: 1rem; /* Add some padding for visual breathing room */
+    margin-bottom: 1rem; /* Separate each section */
+}
+
+/* Projects Section Styles */
+#projects-section h2,
+#experience-section h2,
+#skills-section h2 {
+    color: white;
+    text-align: center; /* Centering the headers */
+    margin: 1rem; /* Add some space around the h2 */
+}
+
+.slider-container {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0; /* Add some margin top and bottom*/
+    scroll-behavior: smooth; /* Smooth scrolling */
+    justify-content: center; /* Center the projects */
+}
+
+.slider-container::-webkit-scrollbar {
+    width: 80px;
+    height: 5px;
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+    background-color: #B2EBF2;
+    border-radius: 10px;
+}
+
+.slider-container::-webkit-scrollbar-track {
+    background-color: #006064;
+}
+
+.projects-holder {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adding space between the elements*/
+    padding: 1rem; /* Add some padding for visual breathing room */
+}
+
+@media (min-width: 1px) {
+    .slider-container.overflow {
+        justify-content: flex-start; /* Increase the gap for larger screens */
+    }
+}
+
+.projects {
+    width: 300px;
+    height: 300px;
+    background-color: #B2EBF2;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Changed to column for better text layout */
+    position: relative;
+    text-align: center;
+    padding: 1rem; /* Add padding for text layout */
+}
+
+.projects a {
+  text-decoration: none; /* Removes the underline of the link */
+  color: black; /* changes the color of the link */
+}
+
+/* Experience Section Styles */
+
+.experience {
+    background-color: #B2EBF2;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem; /* Add padding for content spacing */
+    margin-bottom: 1rem; /* Add some space below the div*/
+}
+
+.experience img {
+    width: 5rem;
+    height: 5rem;
+    opacity: 0.75;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: fill;
+    display: inline-block; /* Change display to inline-block */
+    float: left; /* Removed to manage the image better */
+    margin: 0 1rem 0 0; /* Add margin to the right of the image*/
+}
+
+/* Skills Section Styles */
+
+.skills-holder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+    gap: 1rem; /* Adding space between the elements*/
+    padding: 1rem; /* Add some padding for visual breathing room */
+}
+
+.skills-holder i {
+    font-size: 2rem; /* Making the icons bigger */
+    color: #B2EBF2; /* set the color */
+}

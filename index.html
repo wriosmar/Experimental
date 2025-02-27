@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillermo Rios Martinez Portfolio Website</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_gemini.css">
 </head>
 
 <header>
@@ -22,13 +22,19 @@
         </div>
         <div class="about-social">
             <a href="https://linkedin.com/in/guillermo-rios-martinez/" target="_blank">
-                LinkedIn
+                <i> 
+                    <img src="images/linkedin_icon.png" alt="LinkedIn">
+                </i>
             </a>
             <a href="https://github.com/wriosmar/" target="_blank">
-                GitHub
+                <i> 
+                    <img src="images/github_icon.png" alt="GitHub">
+                </i>
             </a>
             <a href="" target="_blank">
-                Email
+                <i> 
+                    <img src="images/email_icon.png" alt="Instagram">
+                </i>
             </a>
         </div>
         <div class="about-photo">
@@ -96,4 +102,24 @@
         </div>
     </section>
 </body>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+    const sliderContainer = document.querySelector('.slider-container');
+    const projectsHolder = document.querySelector('.projects-holder');
+
+    function checkOverflow() {
+        if (projectsHolder.scrollWidth > sliderContainer.offsetWidth) {
+            sliderContainer.classList.add('overflow'); // Content overflows
+        } else {
+            sliderContainer.classList.remove('overflow'); // Content fits
+        }
+    }
+    checkOverflow();
+
+    window.addEventListener('resize', checkOverflow); // Recheck when the window is resized
+    projectsHolder.addEventListener('DOMNodeInserted', checkOverflow); // Recheck if elements are added
+    });
+</script>
+
 </html>
