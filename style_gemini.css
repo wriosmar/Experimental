@@ -6,16 +6,88 @@ body {
 }
 
 /* About Section Styles */
-.about-name,
-.about-info,
-.about-social {
-    background-color: #B2EBF2; /* Light Blue Background */
+#about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.about-top {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 1;
+    align-items: stretch;
+}
+
+.about-name {
+    background-color: #B2EBF2;
     border-radius: 24px;
-    padding: 1rem; /* Add some padding for visual breathing room */
-    margin-bottom: 1rem; /* Separate each section */
+    padding: 1rem;
+    text-align: center;
+}
+.about-info {
+    background-color: #B2EBF2;
+    border-radius: 24px;
+    padding: 1rem;
+    flex: 1;
+}
+
+.about-social {
+    background-color: #B2EBF2;
+    border-radius: 24px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-social a {
+    display: block;
+}
+
+.about-social img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.about-photo {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #B2EBF2;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Projects Section Styles */
+#projects-section {
+    padding: 2rem;
+}
+
 #projects-section h2,
 #experience-section h2,
 #skills-section h2 {
@@ -82,6 +154,9 @@ body {
 }
 
 /* Experience Section Styles */
+#experience-section {
+    padding: 2rem;
+}
 
 .experience {
     background-color: #B2EBF2;
@@ -100,7 +175,6 @@ body {
     border-radius: 50%;
     object-fit: fill;
     display: inline-block; /* Change display to inline-block */
-    float: left; /* Removed to manage the image better */
     margin: 0 1rem 0 0; /* Add margin to the right of the image*/
 }
 
